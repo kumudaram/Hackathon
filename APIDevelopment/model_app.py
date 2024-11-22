@@ -36,7 +36,7 @@ def predict(data: Input) -> Output:
                        'avg_training_score']
 
     #load model
-    model = joblib.load('new_model_pipeline3.pkl')
+    model = joblib.load('APIDevelopment/new_model_pipeline3.pkl')
 
     #predict
     prediction = model.predict(X_input)
