@@ -11,5 +11,8 @@ COPY . /app/
 
 EXPOSE 8000
 
-CMD ["uvicorn", "model_app:app", "--host", "0.0.0.0", "--port", "8000"]
+#CMD ["uvicorn", "APIDevelopement.model_app:app", "--host", "0.0.0.0", "--port", "8000"]
+
+#GCP
+ENTRYPOINT ["uvicorn", "APIDevelopement.model_app:app", "--host", "0.0.0.0", "--port", "8000"]
 
